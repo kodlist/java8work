@@ -15,10 +15,7 @@ interface XYinterface{
 
 public class Interfaces implements XYinterface{
 	
-	static void m1()
-	{
-		System.out.println("ddd");
-	}
+	static void m1()	{		System.out.println("ddd");	}
 	/*public void m2()
 	{
 		System.out.println("default m2 method o2 ");
@@ -29,7 +26,8 @@ public class Interfaces implements XYinterface{
 		XYinterface xy = new Interfaces();
 		
 		xy.m2();
-		m1();
+		m1(); // note: if comment m1 method in Interfaces class then you get compile time error
+		// static method may be invoked on ocntaining interface only.
 		
 	}
 

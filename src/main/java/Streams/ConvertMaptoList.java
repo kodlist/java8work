@@ -21,20 +21,16 @@ public class ConvertMaptoList {
 		
 		
 		// Java 8, Converting all Map values  to a List
-		List<String> list1 = map.values().stream()
-			.collect(Collectors.toList());
+		List<String> list1 = map.values().stream().collect(Collectors.toList());
 		
 		System.out.println(list1);
-		/*
-		List<String> list2 = map.keySet().stream()
-				.collect(Collectors.toList());*/
+
+		//List<String> list3 = map.keySet().stream().collect(Collectors.toList());
 		
 		
 		
 		// Java 8, seem a bit long, but you can enjoy the Stream features like filter and etc. 
-		List<String> list2 = map.values().stream()
-			.filter(x -> !"roses".equalsIgnoreCase(x))
-			.collect(Collectors.toList());
+		List<String> list2 = map.values().stream().filter(x -> !"roses".equalsIgnoreCase(x)).collect(Collectors.toList());
 		
 		System.out.println(list2);
 		
