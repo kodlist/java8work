@@ -27,7 +27,7 @@ public class Interfaces implements XYinterface{
 		
 		xy.m2();
 		m1(); // note: if comment m1 method in Interfaces class then you get compile time error
-		// static method may be invoked on ocntaining interface only.
+		// static method may be invoked on containing interface only.
 		
 	}
 
